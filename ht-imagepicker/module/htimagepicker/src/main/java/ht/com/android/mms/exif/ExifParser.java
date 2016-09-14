@@ -28,7 +28,6 @@ import java.util.TreeMap;
 /**
  * This class provides a low-level EXIF parsing API. Given a JPEG format
  * InputStream, the caller can request which IFD's to read via
- * {@link #parse(InputStream, int)} with given options.
  * <p>
  * Below is an example of getting EXIF data from IFD 0 and EXIF IFD using the
  * parser.
@@ -247,7 +246,6 @@ public class ExifParser {
      *
      * @exception IOException
      * @exception ExifInvalidFormatException
-     * @see #parse(InputStream, int)
      */
     protected static ExifParser parse(InputStream inputStream, ExifInterface iRef)
             throws IOException, ExifInvalidFormatException {

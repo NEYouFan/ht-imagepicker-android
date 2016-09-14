@@ -29,9 +29,9 @@ public interface HTImagePickInterface {
      * @param image 拍照保存的图片信息
      */
     void onPickedFromCamera(Image image);
+
     /**
      * 从拍照界面取消拍照或者取消保存，返回图片选择页面时触发的回调
-     * @param
      */
     void onCancelFromCamera();
 

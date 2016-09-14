@@ -842,8 +842,8 @@ public class ExifTag {
      *
      * @param buf the byte array in which to store the bytes read.
      * @param offset the initial position in buffer to store the bytes.
-     * @param length the maximum number of bytes to store in buffer. If length >
-     *            component count, only the valid bytes will be stored.
+     * @param length the maximum number of bytes to store in buffer. If length
+     *               is greater than component count, only the valid bytes will be stored.
      * @exception IllegalArgumentException If the type is NOT
      *                {@link #TYPE_UNDEFINED} or {@link #TYPE_UNSIGNED_BYTE}.
      */
@@ -857,7 +857,7 @@ public class ExifTag {
     }
 
     /**
-     * Gets the offset of this tag. This is only valid if this data size > 4 and
+     * Gets the offset of this tag. This is only valid if this data size greater than 4 and
      * contains an offset to the location of the actual value.
      */
     protected int getOffset() {

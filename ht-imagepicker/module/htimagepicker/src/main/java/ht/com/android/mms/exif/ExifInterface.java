@@ -364,7 +364,7 @@ public class ExifInterface {
     }
 
     /**
-     * Constants for {@link TAG_ORIENTATION}. They can be interpreted as
+     * They can be interpreted as
      * follows:
      * <ul>
      * <li>TOP_LEFT is the normal orientation.</li>
