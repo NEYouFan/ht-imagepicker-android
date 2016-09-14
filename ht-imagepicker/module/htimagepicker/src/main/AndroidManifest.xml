@@ -1,0 +1,42 @@
+<manifest
+    package="com.netease.hearttouch.htimagepicker"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application>
+
+        <!-- 选择图片页面 -->
+        <activity
+            android:name=".defaultui.imagepick.activity.HTImagePickActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:screenOrientation="portrait"/>
+        <!-- 多张图片预览页面 -->
+        <activity
+            android:name=".defaultui.imagepreview.activity.HTMultiImagesPreviewActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 单张图片预览页面 -->
+        <activity
+            android:name=".defaultui.imagepreview.activity.HTSingleImagePreviewActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 图片裁剪页面 -->
+        <activity
+            android:name=".defaultui.imagecut.activity.HTImageCutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".core.camera.HTCameraActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:permission="android.permission.CAMERA"
+            android:screenOrientation="portrait"/>
+
+        <!--权限设置设置页面-->
+        <activity
+            android:name=".core.util.permission.PermissionsActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

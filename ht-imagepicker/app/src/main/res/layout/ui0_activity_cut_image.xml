@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/radius_45"
+        android:id="@+id/navigation_bar_container"
+        android:background="@color/green_light_actionbar"/>
+
+    <com.netease.hearttouch.htimagepicker.core.view.HTImageCutView
+        android:id="@+id/cuttable_image_view"
+        android:layout_marginTop="@dimen/radius_45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

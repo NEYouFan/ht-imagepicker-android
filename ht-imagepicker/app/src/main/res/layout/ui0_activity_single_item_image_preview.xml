@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_32">
+
+    <com.netease.hearttouch.htimagepicker.core.view.photoview.HTPhotoView
+        android:id="@+id/preview_image_view"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/preview_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/spa_delete_margin_right"
+        android:layout_marginBottom="@dimen/spa_delete_margin_bottom"
+        android:src="@mipmap/ic_return_delete"
+        android:background="@null"/>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_17sp">17sp</dimen>
+
+    <dimen name="radius_4dp">4dp</dimen>
+    <dimen name="radius_20">20dp</dimen>
+    <dimen name="radius_30">30dp</dimen>
+    <dimen name="radius_45">45dp</dimen>
+
+    <!-- 选择照片 -->
+    <dimen name="pick_image_horizontal_margin">0dp</dimen>
+    <dimen name="pick_image_vertical_margin">3dp</dimen>
+    <dimen name="pick_image_grid_internal_space">3dp</dimen>
+    <dimen name="pick_image_folder_list_item_height">78dp</dimen>
+
+    <dimen name="popmenu_yoff">13dp</dimen>
+    <dimen name="action_bar_height">45dp</dimen>
+    <dimen name="padding_medium">15dp</dimen>
+
+    <dimen name="camera_padding_bottom">110dp</dimen>
+    <dimen name="camera_font_size">18sp</dimen>
+    <dimen name="camera_text_margin">15dp</dimen>
+    <dimen name="camera_tokephoto_bottom_size">66dp</dimen>
+
+    <dimen name="ok_button_size">20dp</dimen>
+    <dimen name="cancel_button_size">20dp</dimen>
+
+</resources>

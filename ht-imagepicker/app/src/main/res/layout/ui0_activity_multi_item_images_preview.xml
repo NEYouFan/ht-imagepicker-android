@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.netease.hearttouch.htimagepicker.core.view.photoview.PhotoViewPager
+        android:id="@+id/image_fullscreen_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.netease.htimagepicker.ui0.imagepreview.view.BannerIndicatorLayout
+        android:id="@+id/indicator_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mpa_indicator_margin_bottom"
+        app:indicator_space="@dimen/banner_indicator_space"
+        app:select_background="@mipmap/switching_point_red"
+        app:unselect_background="@mipmap/switching_point_white"/>
+
+</RelativeLayout>

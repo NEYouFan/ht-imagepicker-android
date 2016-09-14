@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical">
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f4f4f4">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/pick_image_light_gray_line"/>
+
+        <Button
+            android:id="@+id/complete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/shape_round_30dp_green_normal"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="完成"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/preview_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:text="预览"
+            android:textColor="#3fc380"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/pick_image_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_container"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/pick_image_horizontal_margin"
+        android:layout_marginRight="@dimen/pick_image_horizontal_margin"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/pick_image_grid_internal_space"
+        android:listSelector="@drawable/selector_bg_gridview_item"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/pick_image_grid_internal_space"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+repositories {
+    // camera相关
+//    maven { url "https://s3.amazonaws.com/repo.commonsware.com" }
+    maven { url "http://mvn.hz.netease.com/artifactory/libs-snapshots/" }
+    maven { url "http://mvn.hz.netease.com/artifactory/libs-releases/" }
+    jcenter()
+}
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION.toInteger()
+    buildToolsVersion BUILD_TOOLS_VERSION
+    resourcePrefix "ne_" //自定义
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION.toInteger()
+        targetSdkVersion TARGET_SDK_VERSION.toInteger()
+        versionCode 1
+        versionName "1.0.4"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    sourceSets {
+//        main {
+//            manifest.srcFile 'AndroidManifest.xml'
+//            java.srcDirs = ['src']
+//            resources.srcDirs = ['src']
+//            aidl.srcDirs = ['src']
+//            res.srcDirs = ['res']
+//            assets.srcDirs = ['assets']
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    testCompile "junit:junit:${JUNIT_VERSION}"
+    compile "com.android.support:appcompat-v7:${APPCOMPAT_V7_VERSION}"
+
+    //compile "com.commit451:PhotoView:${COMMIT_PHOTOVIEW_VERSION}"
+
+//    compile 'com.commonsware.cwac:camera:0.6.+'
+//    compile('com.commonsware.cwac:camera-v9:0.6.+') {
+//        exclude module: 'support-v4'
+//    }
+}
+
+version = '1.0.0'
+group = 'com.netease.hearttouch'
+
+def siteUrl = 'https://github.com/NEYouFan/ht-imagepicker'      // 项目的主页
+def gitUrl = 'https://github.com/NEYouFan/ht-imagepicker.git'   // Git仓库的url
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'http://mvn.hz.netease.com/artifactory/libs-releases') {
+                authentication(userName: 'admin', password: 'password')
+            }
+            snapshotRepository(url: 'http://mvn.hz.netease.com/artifactory/libs-snapshots')
+        }
+    }
+}
+

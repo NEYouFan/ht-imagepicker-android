@@ -1,0 +1,15 @@
+<!--
+This drawable can be removed when we minSdkVersion=21.
+That is when we are going to use FAB
+for the camera button and this drawable will be obsolete.-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_list_takingpictures_no" android:state_enabled="false"/>
+
+    <!-- pressed -->
+    <item android:drawable="@drawable/ic_list_takingpictures_pressed" android:state_pressed="true"/>
+
+    <!-- focused -->
+    <item android:drawable="@drawable/ic_list_takingpictures" android:state_enabled="true"/>
+
+    <item android:drawable="@drawable/ic_list_takingpictures"/>
+</selector>

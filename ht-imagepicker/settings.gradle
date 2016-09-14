@@ -1,0 +1,2 @@
+include ':app', ':htimagepicker'
+project(':htimagepicker').projectDir = new File('module/htimagepicker')

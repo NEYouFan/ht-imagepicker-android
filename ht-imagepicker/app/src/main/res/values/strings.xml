@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HTImagePicker</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="confirm_select">确定选择</string>
+    <string name="cancel_select">取消选择</string>
+    <string name="save">保存</string>
+    <string name="custom_cut_image_title">自定义裁剪界面</string>
+
+    <string name="pia_title">全部图片</string>
+    <string name="pia_count_format">已选择（%1$d/%2$d）</string>
+</resources>

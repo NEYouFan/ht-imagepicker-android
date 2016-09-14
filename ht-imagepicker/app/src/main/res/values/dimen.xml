@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_gap">10dp</dimen>
+
+    <!-- multi preview activity -->
+    <dimen name="mpa_indicator_margin_bottom">30dp</dimen>
+    <!--single preview activity -->
+    <dimen name="spa_delete_margin_right">15dp</dimen>
+    <dimen name="spa_delete_margin_bottom">36dp</dimen>
+    <dimen name="banner_indicator_space">6dp</dimen>
+</resources>
