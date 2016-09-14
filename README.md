@@ -31,7 +31,7 @@ ht-imagepicker
 
 ## ht-imagepicker 默认实现效果
 
-<!--![image](https://g.hz.netease.com/hearttouch-android/ht-imagepicker/raw/27eaa535947e84d2db621d2884823f894710f52d/effect.gif)-->
+![image](effect.gif)
 
 ## ht-imagepicker 的集成
 
@@ -39,16 +39,18 @@ ht-imagepicker 允许通过 Maven Center 下载使用。
 
 Gradle:
 
+compile 'com.netease.hearttouch:ht-imagepicker:1.0.0'
+
 
 ##ProGuard configuration
 
 提交的aar包是并没有经过混淆的，所以在工程的 proguard 文件中，不需要额外设置代码
 
 ##开发文档
-ht-imagepicker 的详细使用文档，请参见 [使用文档]()
+ht-imagepicker 的详细使用文档，请参见 [使用文档](https://github.com/NEYouFan/ht-imagepicker-android/blob/master/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.md)
 
 ##版本发布历史
 
-[CHANGELOG]()
+[CHANGELOG](https://github.com/NEYouFan/ht-imagepicker-android)
 
 ##杭研 HeartTouch 更多开源项目
