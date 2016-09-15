@@ -3,23 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/selector_bg_white_grey">
+    android:background="@drawable/ne_selector_bg_white_grey">
 
     <TextView
         android:id="@+id/tv_title"
-        style="@style/tv_common_16sp"
+        style="@style/ne_tv_common_16sp"
         android:layout_width="match_parent"
         android:gravity="left|center_vertical"
-        android:paddingTop="@dimen/padding_medium"
-        android:paddingBottom="@dimen/padding_medium"
+        android:paddingTop="@dimen/ne_padding_medium"
+        android:paddingBottom="@dimen/ne_padding_medium"
         android:paddingLeft="18dp"
         android:paddingRight="18dp"
-        android:textColor="@color/gray_32"/>
+        android:textColor="@color/ne_gray_32"/>
 
     <View
         android:id="@+id/v_divider"
         android:layout_width="match_parent"
         android:layout_height="0.51dp"
-        android:background="@color/divider_grey"/>
+        android:background="@color/ne_divider_grey"/>
 
 </LinearLayout>

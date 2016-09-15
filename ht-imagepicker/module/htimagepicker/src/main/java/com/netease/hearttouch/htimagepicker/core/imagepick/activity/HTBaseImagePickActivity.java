@@ -240,7 +240,7 @@ public abstract class HTBaseImagePickActivity extends AppCompatActivity
             String outPath = getCameraFileName(true);
 
             if (TextUtils.isEmpty(outPath) || !StorageUtil.checkSdcardCapacity(false)) {
-                ContextUtil.INSTANCE.makeToast(R.string.pick_image_sdcard_not_enough_error);
+                ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_sdcard_not_enough_error);
                 return;
             }
             File outputFile = new File(outPath);
@@ -254,9 +254,9 @@ public abstract class HTBaseImagePickActivity extends AppCompatActivity
                 HTCameraActivity.startForResult(this, uri, REQUEST_CODE_CAMERA);
             }
         } catch (ActivityNotFoundException e) {
-            ContextUtil.INSTANCE.makeToast(R.string.pick_image_camera_invalid);
+            ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_camera_invalid);
         } catch (Exception e) {
-            ContextUtil.INSTANCE.makeToast(R.string.pick_image_sdcard_not_enough_head_error);
+            ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_sdcard_not_enough_head_error);
         }
     }
 
@@ -398,7 +398,7 @@ public abstract class HTBaseImagePickActivity extends AppCompatActivity
                 onCancelFromCamera();
             }
         } catch (Exception e) {
-            ContextUtil.INSTANCE.makeToast(R.string.pick_image_get_image_info_failed);
+            ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_get_image_info_failed);
         }
     }
 

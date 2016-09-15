@@ -308,7 +308,7 @@ public class ImageUtil {
         @Override
         protected void onPostExecute(String result) {
             addImageToGallery(mToFile.getAbsolutePath(), mContext);
-            ContextUtil.INSTANCE.makeToast(R.string.pick_image_pic_save_success);
+            ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_pic_save_success);
         }
     }
 }

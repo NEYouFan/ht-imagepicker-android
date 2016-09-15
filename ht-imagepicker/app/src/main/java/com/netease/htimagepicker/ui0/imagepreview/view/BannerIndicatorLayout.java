@@ -43,8 +43,8 @@ public class BannerIndicatorLayout extends LinearLayout {
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.BannerIndicatorLayout);
 
         try {
-            selcetBackground = typedArray.getResourceId(R.styleable.BannerIndicatorLayout_select_background, R.color.transparent);
-            unselcetBackground = typedArray.getResourceId(R.styleable.BannerIndicatorLayout_unselect_background, R.color.transparent);
+            selcetBackground = typedArray.getResourceId(R.styleable.BannerIndicatorLayout_select_background, R.color.ne_transparent);
+            unselcetBackground = typedArray.getResourceId(R.styleable.BannerIndicatorLayout_unselect_background, R.color.ne_transparent);
             space = typedArray.getDimensionPixelSize(R.styleable.BannerIndicatorLayout_indicator_space, 10);
         } finally {
             typedArray.recycle();

@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/ne_black">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/radius_45"
+        android:layout_height="@dimen/ne_radius_45"
         android:id="@+id/navigation_bar_container"
-        android:background="@color/green_light_actionbar"/>
+        android:background="@color/ne_green_light_actionbar"/>
 
     <com.netease.hearttouch.htimagepicker.core.view.HTImageCutView
         android:id="@+id/cuttable_image_view"
-        android:layout_marginTop="@dimen/radius_45"
+        android:layout_marginTop="@dimen/ne_radius_45"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </RelativeLayout>

@@ -8,11 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="tv_common_16sp">
+    <style name="ne_tv_common_16sp">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/text_16sp</item>
-        <item name="android:textColor">@color/gray_32</item>
+        <item name="android:textSize">@dimen/ne_text_16sp</item>
+        <item name="android:textColor">@color/ne_gray_32</item>
     </style>
 
 </resources>

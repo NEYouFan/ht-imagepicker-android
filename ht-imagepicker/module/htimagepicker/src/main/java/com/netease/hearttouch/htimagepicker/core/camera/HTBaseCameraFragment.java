@@ -163,7 +163,7 @@ public abstract class HTBaseCameraFragment extends CameraFragment
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(getActivity(), getString(R.string.pick_image_photo_save_error_toast), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), getString(R.string.ne_pick_image_photo_save_error_toast), Toast.LENGTH_SHORT).show();
                 ((HTCameraActivity) getActivity()).finish(null);
             }
         });
@@ -227,7 +227,7 @@ public abstract class HTBaseCameraFragment extends CameraFragment
             getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(getActivity(), getString(R.string.pick_image_photo_save_error_toast), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), getString(R.string.ne_pick_image_photo_save_error_toast), Toast.LENGTH_SHORT).show();
                     setTakePictureValid(true);
                 }
             });

@@ -9,37 +9,37 @@
         android:id="@+id/pp_camera"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/camera_padding_bottom"/>
+        android:paddingBottom="@dimen/ne_camera_padding_bottom"/>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/camera_padding_bottom"
+        android:layout_height="@dimen/ne_camera_padding_bottom"
         android:layout_gravity="bottom|center_horizontal"
         android:background="@android:color/black">
 
         <ImageView
             android:id="@+id/camera_cancel"
-            android:layout_width="@dimen/cancel_button_size"
-            android:layout_height="@dimen/ok_button_size"
+            android:layout_width="@dimen/ne_cancel_button_size"
+            android:layout_height="@dimen/ne_ok_button_size"
             android:layout_gravity="left|center_vertical"
-            android:layout_marginLeft="@dimen/camera_text_margin"
+            android:layout_marginLeft="@dimen/ne_camera_text_margin"
             android:background="@android:color/transparent"
             android:src="@mipmap/ic_back_red"
             android:visibility="invisible"/>
 
         <ImageButton
             android:id="@+id/pp_take_picture"
-            android:layout_width="@dimen/camera_tokephoto_bottom_size"
-            android:layout_height="@dimen/camera_tokephoto_bottom_size"
+            android:layout_width="@dimen/ne_camera_tokephoto_bottom_size"
+            android:layout_height="@dimen/ne_camera_tokephoto_bottom_size"
             android:layout_gravity="center"
-            android:background="@drawable/camera_btn_bg"/>
+            android:background="@drawable/ne_camera_btn_bg"/>
 
         <ImageView
             android:id="@+id/camera_complete"
-            android:layout_width="@dimen/cancel_button_size"
-            android:layout_height="@dimen/ok_button_size"
+            android:layout_width="@dimen/ne_cancel_button_size"
+            android:layout_height="@dimen/ne_ok_button_size"
             android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="@dimen/camera_text_margin"
+            android:layout_marginRight="@dimen/ne_camera_text_margin"
             android:background="@android:color/transparent"
             android:src="@mipmap/ic_ok_red"
             android:visibility="invisible"/>

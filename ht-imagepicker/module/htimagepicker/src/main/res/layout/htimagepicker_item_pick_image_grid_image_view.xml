@@ -35,7 +35,7 @@
         android:layout_gravity="bottom|end"
         android:gravity="center"
         android:text=""
-        android:textColor="@color/gray_32"
+        android:textColor="@color/ne_gray_32"
         android:textSize="13dp" />
 
 </FrameLayout>

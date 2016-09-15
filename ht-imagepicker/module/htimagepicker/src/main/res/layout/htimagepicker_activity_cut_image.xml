@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/ne_black">
 
     <com.netease.hearttouch.htimagepicker.core.view.HTImageCutView
         android:id="@+id/cuttable_image_view"
@@ -17,9 +17,9 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
-        android:text="@string/pick_image_reselect"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_17sp" />
+        android:text="@string/ne_pick_image_reselect"
+        android:textColor="@color/ne_white"
+        android:textSize="@dimen/ne_text_17sp" />
 
     <TextView
         android:id="@+id/btn_use"
@@ -29,8 +29,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/pick_image_use"
-        android:textColor="@color/green_normal"
-        android:textSize="@dimen/text_17sp" />
+        android:text="@string/ne_pick_image_use"
+        android:textColor="@color/ne_green_normal"
+        android:textSize="@dimen/ne_text_17sp" />
 
 </RelativeLayout>

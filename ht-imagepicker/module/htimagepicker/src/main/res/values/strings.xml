@@ -1,38 +1,38 @@
 <resources>
-    <string name="app_name">HTImagePicker</string>
+    <string name="ne_app_name">HTImagePicker</string>
 
-    <string name="pick_image_reselect">重选</string>
-    <string name="pick_image_re_take_photo">重拍</string>
-    <string name="pick_image_use">使用</string>
+    <string name="ne_pick_image_reselect">重选</string>
+    <string name="ne_pick_image_re_take_photo">重拍</string>
+    <string name="ne_pick_image_use">使用</string>
 
-    <string name="pick_image_title_text">相机胶卷</string>
-    <string name="pick_image_thumbnail_file_name">缩略图</string>
-    <string name="pick_image_count_unit">张</string>
-    <string name="pick_image_max_pick_warning_with_number">最多上传%d张图哦</string>
-    <string name="pick_image_camera_invalid">你的手机没有拍照程序</string>
-    <string name="pick_image_sdcard_not_enough_head_error">SD卡存储空间不足哦</string>
-    <string name="pick_image_all_pic_title_name">所有照片</string>
-    <string name="pick_image_get_image_info_failed">喵，获取图片信息失败</string>
+    <string name="ne_pick_image_title_text">相机胶卷</string>
+    <string name="ne_pick_image_thumbnail_file_name">缩略图</string>
+    <string name="ne_pick_image_count_unit">张</string>
+    <string name="ne_pick_image_max_pick_warning_with_number">最多上传%d张图哦</string>
+    <string name="ne_pick_image_camera_invalid">你的手机没有拍照程序</string>
+    <string name="ne_pick_image_sdcard_not_enough_head_error">SD卡存储空间不足哦</string>
+    <string name="ne_pick_image_all_pic_title_name">所有照片</string>
+    <string name="ne_pick_image_get_image_info_failed">喵，获取图片信息失败</string>
 
-    <string name="pick_image_finish_with_number">完成(%d)</string>
+    <string name="ne_pick_image_finish_with_number">完成(%d)</string>
 
     <!-- 查看大图 -->
-    <string name="pick_image_pic_save_success">保存成功</string>
-    <string name="pick_image_warn_pic_count_more_than_0">预览的图片数量应该大于0</string>
+    <string name="ne_pick_image_pic_save_success">保存成功</string>
+    <string name="ne_pick_image_warn_pic_count_more_than_0">预览的图片数量应该大于0</string>
 
     <!-- storage -->
-    <string name="pick_image_sdcard_not_exist_error">请插入SD卡</string>
-    <string name="pick_image_sdcard_not_enough_error">存储空间不足</string>
-    <string name="pick_image_sdcard_not_enough_warning">剩余存储空间少，建议清理存储卡</string>
+    <string name="ne_pick_image_sdcard_not_exist_error">请插入SD卡</string>
+    <string name="ne_pick_image_sdcard_not_enough_error">存储空间不足</string>
+    <string name="ne_pick_image_sdcard_not_enough_warning">剩余存储空间少，建议清理存储卡</string>
 
-    <string name="pick_image_progress_title">正在处理...</string>
-    <string name="pick_image_photo_save_error_toast">图片保存失败</string>
+    <string name="ne_pick_image_progress_title">正在处理...</string>
+    <string name="ne_pick_image_photo_save_error_toast">图片保存失败</string>
 
-    <string name="pick_image_camera_redo">重拍</string>
-    <string name="pick_image_camera_complete">确定</string>
+    <string name="ne_pick_image_camera_redo">重拍</string>
+    <string name="ne_pick_image_camera_complete">确定</string>
 
-    <string name="pick_image_settings">设置</string>
-    <string name="pick_image_help">帮助</string>
-    <string name="pick_image_help_content">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
-    <string name="pick_image_quit">退出</string>
+    <string name="ne_pick_image_settings">设置</string>
+    <string name="ne_pick_image_help">帮助</string>
+    <string name="ne_pick_image_help_content">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="ne_pick_image_quit">退出</string>
 </resources>

@@ -78,7 +78,7 @@ public class ImagePreviewPagerAdapter extends ViewPagerAdapter {
 //        Activity activity = (Activity) mContext;
 //        activity.finish();
 //        activity.overridePendingTransition(0,
-//                R.anim.anim_img_fullscreen_out);
+//                R.anim.ne_anim_img_fullscreen_out);
 //    }
 
     private static class ViewHolder {

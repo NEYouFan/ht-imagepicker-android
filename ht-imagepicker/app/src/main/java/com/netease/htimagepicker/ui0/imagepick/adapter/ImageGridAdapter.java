@@ -97,8 +97,8 @@ public class ImageGridAdapter extends BaseAdapter {
                 convertView = mInflater.inflate(R.layout.htimagepicker_item_pick_image_grid_image_view, null);
                 TextView orderView = ViewHolder.get(convertView, R.id.order_number);
             }
-            int hMargin = (int) ContextUtil.INSTANCE.getDimen(R.dimen.pick_image_horizontal_margin);
-            int hSpace = (int) ContextUtil.INSTANCE.getDimen(R.dimen.pick_image_grid_internal_space);
+            int hMargin = (int) ContextUtil.INSTANCE.getDimen(R.dimen.ne_pick_image_horizontal_margin);
+            int hSpace = (int) ContextUtil.INSTANCE.getDimen(R.dimen.ne_pick_image_grid_internal_space);
             int height = (ContextUtil.INSTANCE.getScreenWidthPixel() - 2 * hMargin - 2 * hSpace) / 3;
             GridView.LayoutParams lp = new GridView.LayoutParams(GridView.LayoutParams.MATCH_PARENT, height);
             convertView.setLayoutParams(lp);

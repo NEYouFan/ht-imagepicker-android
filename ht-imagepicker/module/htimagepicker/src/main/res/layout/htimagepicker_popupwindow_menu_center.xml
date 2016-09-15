@@ -3,14 +3,14 @@
     android:id="@+id/ll_mask"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mask"
+    android:background="@color/ne_mask"
     android:gravity="center">
 
     <ListView
         android:id="@+id/lv_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_round_4dp_white"
+        android:background="@drawable/ne_shape_round_4dp_white"
         android:divider="@null"
         android:listSelector="@null"
         android:padding="2dp" />

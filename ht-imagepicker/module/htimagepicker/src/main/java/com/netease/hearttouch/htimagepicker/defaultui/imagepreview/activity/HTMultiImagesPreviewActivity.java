@@ -69,9 +69,9 @@ public class HTMultiImagesPreviewActivity extends HTBaseImagePreviewActivity {
     }
 
     private void initNavigationBar() {
-        mNavigationBarContainer.setBackgroundColor(ContextUtil.INSTANCE.getColor(R.color.transparent));
+        mNavigationBarContainer.setBackgroundColor(ContextUtil.INSTANCE.getColor(R.color.ne_transparent));
         mNavigationBar.setLeftBackImage(R.drawable.ic_back_arrow_white);
-        mNavigationBar.setBackgroundColor(ContextUtil.INSTANCE.getColor(R.color.bg_transparent_grey));
+        mNavigationBar.setBackgroundColor(ContextUtil.INSTANCE.getColor(R.color.ne_bg_transparent_grey));
         mNavigationBar.setBackButtonClick(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,7 +100,7 @@ public class HTMultiImagesPreviewActivity extends HTBaseImagePreviewActivity {
     private void initContentView() {
         View view = LayoutInflater.from(this).inflate(R.layout.htimagepicker_activity_image_fullscreen, null, false);
         mContentView.addView(view);
-        mContentView.setBackgroundResource(R.color.black);
+        mContentView.setBackgroundResource(R.color.ne_black);
 
         mFinishBtn = (Button) view.findViewById(R.id.btn_finish);
         mFinishBtn.setVisibility(View.VISIBLE);
@@ -113,7 +113,7 @@ public class HTMultiImagesPreviewActivity extends HTBaseImagePreviewActivity {
         updateFinishButton();
 
         mImagePager = (PhotoViewPager) view.findViewById(R.id.image_fullscreen_pager);
-        mImagePager.setBackgroundResource(R.color.black);
+        mImagePager.setBackgroundResource(R.color.ne_black);
         ImagePreviewPagerAdapter adapter = new ImagePreviewPagerAdapter(this, getImagePaths());
         mImagePager.setAdapter(adapter);
         mImagePager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -171,7 +171,7 @@ public class HTMultiImagesPreviewActivity extends HTBaseImagePreviewActivity {
 
     private void updateFinishButton() {
         int selectCount = mImages.size() - mCancelMarks.size();
-        mFinishBtn.setText(ContextUtil.INSTANCE.stringFormat(R.string.pick_image_finish_with_number, selectCount));
+        mFinishBtn.setText(ContextUtil.INSTANCE.stringFormat(R.string.ne_pick_image_finish_with_number, selectCount));
     }
 
     private void updateTitle(int position) {

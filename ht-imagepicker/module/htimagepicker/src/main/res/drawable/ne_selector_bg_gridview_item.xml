@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/transparent_black_20" android:state_pressed="true"/>
-    <item android:drawable="@color/white"/>
+    <item android:drawable="@color/ne_transparent_black_20" android:state_pressed="true"/>
+    <item android:drawable="@color/ne_white"/>
 
     <!--<item android:drawable="@drawable/post_footer_like_pressed" android:state_selected="true"/>-->
     <!--<item android:drawable="@drawable/post_footer_like_normal" android:state_selected="false"/>-->

@@ -133,7 +133,7 @@ public class PopupwindowMenu {
 
     //下拉式 弹出 pop菜单 parent 右下角
     public void showAsDropDown(View parent) {
-        showAsDropDown(parent, 0, mContext.getResources().getDimensionPixelSize(R.dimen.popmenu_yoff));
+        showAsDropDown(parent, 0, mContext.getResources().getDimensionPixelSize(R.dimen.ne_popmenu_yoff));
     }
 
     //下拉式 弹出 pop菜单 parent 右下角

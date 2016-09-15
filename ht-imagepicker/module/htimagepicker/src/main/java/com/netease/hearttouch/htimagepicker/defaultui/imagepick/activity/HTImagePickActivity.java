@@ -196,7 +196,7 @@ public class HTImagePickActivity
         if (mSelectedImages.contains(image)) {
             mSelectedImages.remove(image);
         } else if (mSelectedImages.size() >= getSelectLimit()) {
-            ContextUtil.INSTANCE.makeToast(R.string.pick_image_max_pick_warning_with_number,
+            ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_max_pick_warning_with_number,
                     getSelectLimit());
         } else {
             mSelectedImages.add(image);
@@ -215,7 +215,7 @@ public class HTImagePickActivity
                 int lpHeight = ViewGroup.LayoutParams.WRAP_CONTENT;
                 final List<ImageFolder> imageFolders = ImageInfoUtil.getImageFolders();
                 if (imageFolders != null && imageFolders.size() > 5) {
-                    lpHeight = 5 * (int) ContextUtil.INSTANCE.getDimen(R.dimen.pick_image_folder_list_item_height);
+                    lpHeight = 5 * (int) ContextUtil.INSTANCE.getDimen(R.dimen.ne_pick_image_folder_list_item_height);
                 }
                 mPopupwindowMenu = new PopupwindowMenu(HTImagePickActivity.this,
                         ViewGroup.LayoutParams.MATCH_PARENT,
@@ -277,11 +277,11 @@ public class HTImagePickActivity
 
     private void updateFinishButton() {
         if (mSelectedImages.size() == 0) {
-            mCompleteBtn.setBackgroundResource(R.drawable.shape_round_30dp_green_light);
-            mCompleteBtn.setText(ContextUtil.INSTANCE.stringFormat(R.string.pick_image_finish_with_number, 0));
+            mCompleteBtn.setBackgroundResource(R.drawable.ne_shape_round_30dp_green_light);
+            mCompleteBtn.setText(ContextUtil.INSTANCE.stringFormat(R.string.ne_pick_image_finish_with_number, 0));
         } else {
-            mCompleteBtn.setBackgroundResource(R.drawable.shape_round_30dp_green_normal);
-            mCompleteBtn.setText(ContextUtil.INSTANCE.stringFormat(R.string.pick_image_finish_with_number, mSelectedImages.size()));
+            mCompleteBtn.setBackgroundResource(R.drawable.ne_shape_round_30dp_green_normal);
+            mCompleteBtn.setText(ContextUtil.INSTANCE.stringFormat(R.string.ne_pick_image_finish_with_number, mSelectedImages.size()));
         }
     }
 
@@ -311,7 +311,7 @@ public class HTImagePickActivity
             if (isFromTop) {
                 mContentView.setPadding(0, 0, 0, 0);
             } else {
-                float actionBarHeight = getResources().getDimension(R.dimen.action_bar_height);
+                float actionBarHeight = getResources().getDimension(R.dimen.ne_action_bar_height);
                 if (mNavigationBarContainer.getHeight() > 0) {
                     actionBarHeight = mNavigationBarContainer.getHeight();
                 }

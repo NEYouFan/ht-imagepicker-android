@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.netease.hearttouch.htimagepicker.R;
-import com.netease.hearttouch.htimagepicker.core.constants.C;
 import com.netease.hearttouch.htimagepicker.core.imagepreview.activity.HTBaseImagePreviewActivity;
 import com.netease.hearttouch.htimagepicker.core.imagescan.Image;
 import com.netease.hearttouch.htimagepicker.core.util.ContextUtil;
@@ -73,8 +72,8 @@ public class HTSingleImagePreviewActivity extends HTBaseImagePreviewActivity {
         // The MAGIC happens here!
         imageView.setMatrixChangeListener(new MatrixChangeListener());
 
-        mNavigationBarContainer.setBackgroundResource(R.color.transparent);
-        mNavigationBar.setBackgroundResource(R.color.transparent);
+        mNavigationBarContainer.setBackgroundResource(R.color.ne_transparent);
+        mNavigationBar.setBackgroundResource(R.color.ne_transparent);
         mNavigationBar.setBackButtonClick(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

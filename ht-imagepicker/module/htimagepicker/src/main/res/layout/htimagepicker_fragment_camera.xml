@@ -9,7 +9,7 @@
         android:id="@+id/pp_camera"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/camera_padding_bottom"/>
+        android:paddingBottom="@dimen/ne_camera_padding_bottom"/>
 
     <!--<ImageView-->
         <!--android:id="@+id/photo_view"-->
@@ -21,7 +21,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/camera_padding_bottom"
+        android:layout_height="@dimen/ne_camera_padding_bottom"
         android:layout_gravity="bottom|center_horizontal"
         android:background="@android:color/black">
 
@@ -30,30 +30,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left|center_vertical"
-            android:layout_marginLeft="@dimen/camera_text_margin"
+            android:layout_marginLeft="@dimen/ne_camera_text_margin"
             android:background="@android:color/transparent"
-            android:text="@string/pick_image_camera_redo"
+            android:text="@string/ne_pick_image_camera_redo"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/camera_font_size"
+            android:textSize="@dimen/ne_camera_font_size"
             android:visibility="invisible"/>
 
         <ImageButton
             android:id="@+id/pp_take_picture"
-            android:layout_width="@dimen/camera_tokephoto_bottom_size"
-            android:layout_height="@dimen/camera_tokephoto_bottom_size"
+            android:layout_width="@dimen/ne_camera_tokephoto_bottom_size"
+            android:layout_height="@dimen/ne_camera_tokephoto_bottom_size"
             android:layout_gravity="center"
-            android:background="@drawable/camera_btn_bg"/>
+            android:background="@drawable/ne_camera_btn_bg"/>
 
         <TextView
             android:id="@+id/camera_complete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="@dimen/camera_text_margin"
+            android:layout_marginRight="@dimen/ne_camera_text_margin"
             android:background="@android:color/transparent"
-            android:text="@string/pick_image_camera_complete"
+            android:text="@string/ne_pick_image_camera_complete"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/camera_font_size"
+            android:textSize="@dimen/ne_camera_font_size"
             android:visibility="invisible"/>
 
     </FrameLayout>

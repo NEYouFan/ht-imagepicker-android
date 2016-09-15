@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray_32">
+    android:background="@color/ne_gray_32">
 
     <!--HTPhotoView 必须为嵌套在第一层-->
     <com.netease.hearttouch.htimagepicker.core.view.photoview.HTPhotoView
@@ -16,9 +16,9 @@
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_gravity="center"
-        android:background="@drawable/shape_round_20dp_grey_transparent"
+        android:background="@drawable/ne_shape_round_20dp_grey_transparent"
         android:indeterminate="false"
-        android:indeterminateDrawable="@anim/anim_loading_center_small"
+        android:indeterminateDrawable="@anim/ne_anim_loading_center_small"
         android:padding="20dp"
         android:visibility="gone" />
 

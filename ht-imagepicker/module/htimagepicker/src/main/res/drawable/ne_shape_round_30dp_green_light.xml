@@ -2,11 +2,11 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- 圆角 -->
     <corners
-        android:bottomLeftRadius="@dimen/radius_30"
-        android:bottomRightRadius="@dimen/radius_30"
-        android:radius="@dimen/radius_30"
-        android:topLeftRadius="@dimen/radius_30"
-        android:topRightRadius="@dimen/radius_30" />
+        android:bottomLeftRadius="@dimen/ne_radius_30"
+        android:bottomRightRadius="@dimen/ne_radius_30"
+        android:radius="@dimen/ne_radius_30"
+        android:topLeftRadius="@dimen/ne_radius_30"
+        android:topRightRadius="@dimen/ne_radius_30" />
     <!-- 设置圆角半径 -->
 
     <!-- 间隔 -->
@@ -24,7 +24,7 @@
     <!-- 宽度和高度 -->
 
     <!-- 填充 -->
-    <solid android:color="@color/green_40" />
+    <solid android:color="@color/ne_green_40" />
     <!-- 填充的颜色 -->
 
     <!-- 描边，边框 -->

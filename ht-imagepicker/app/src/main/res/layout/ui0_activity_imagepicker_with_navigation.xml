@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:id="@+id/navigation_bar_container"
-        android:background="@color/green_light_actionbar">
+        android:background="@color/ne_green_light_actionbar">
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/content_view"
-        android:background="@color/white">
+        android:background="@color/ne_white">
 
     </FrameLayout>
 

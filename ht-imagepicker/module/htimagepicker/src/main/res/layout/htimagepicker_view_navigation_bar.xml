@@ -27,7 +27,7 @@
             android:paddingBottom="3dp"
             android:paddingLeft="12dp"
             android:paddingTop="3dp"
-            android:textColor="@color/green_normal"
+            android:textColor="@color/ne_green_normal"
             android:textSize="15dp" />
     </FrameLayout>
 
@@ -56,7 +56,7 @@
             android:paddingBottom="3dp"
             android:paddingRight="12dp"
             android:paddingTop="3dp"
-            android:textColor="@color/green_normal"
+            android:textColor="@color/ne_green_normal"
             android:textSize="15dp" />
     </FrameLayout>
 
@@ -90,6 +90,6 @@
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:layout_alignParentBottom="true"
-        android:background="@color/split_line_grey_color_e0"
+        android:background="@color/ne_split_line_grey_color_e0"
         android:visibility="invisible" />
 </RelativeLayout>

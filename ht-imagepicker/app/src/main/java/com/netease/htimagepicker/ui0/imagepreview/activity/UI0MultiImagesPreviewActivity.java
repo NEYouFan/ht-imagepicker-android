@@ -50,7 +50,7 @@ public class UI0MultiImagesPreviewActivity extends HTBaseImagePreviewActivity {
         mImagePager = (PhotoViewPager) findViewById(R.id.image_fullscreen_pager);
         mIndicatorLayout = (BannerIndicatorLayout) findViewById(R.id.indicator_banner);
 
-        mImagePager.setBackgroundResource(R.color.black);
+        mImagePager.setBackgroundResource(R.color.ne_black);
         UI0ImagePreviewPagerAdapter adapter = new UI0ImagePreviewPagerAdapter(this, getImagePaths());
         mImagePager.setAdapter(adapter);
         mImagePager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {

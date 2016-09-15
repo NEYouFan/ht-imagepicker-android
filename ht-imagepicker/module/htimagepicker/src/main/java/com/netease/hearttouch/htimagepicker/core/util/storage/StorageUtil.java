@@ -179,13 +179,13 @@ public class StorageUtil {
         long freeSize = getSdcardFreeSize(file);
         if (freeSize < MIN_CAPACITY) {
             if (isToast) {
-                ContextUtil.INSTANCE.makeToast(R.string.pick_image_sdcard_not_enough_error);
+                ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_sdcard_not_enough_error);
             }
             return false;
         }
 
         if (freeSize < LOW_CAPACITY && isToast) {
-            ContextUtil.INSTANCE.makeToast(R.string.pick_image_sdcard_not_enough_warning);
+            ContextUtil.INSTANCE.makeToast(R.string.ne_pick_image_sdcard_not_enough_warning);
         }
 
         return true;

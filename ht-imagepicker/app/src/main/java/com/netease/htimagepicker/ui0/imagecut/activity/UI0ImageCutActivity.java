@@ -43,9 +43,9 @@ public class UI0ImageCutActivity extends HTBaseImageCutActivity {
 
         navigationBar.setLeftBackImage(R.mipmap.ic_back_red);
         // 设置背景色
-        navigationBackground.setBackgroundColor(getResources().getColor(R.color.black));
+        navigationBackground.setBackgroundColor(getResources().getColor(R.color.ne_black));
         // title颜色
-        navigationBar.setTitleColor(R.color.white);
+        navigationBar.setTitleColor(R.color.ne_white);
         // 设置右文字
         navigationBar.setRightText(getResources().getString(R.string.save));
         // 设置title文字

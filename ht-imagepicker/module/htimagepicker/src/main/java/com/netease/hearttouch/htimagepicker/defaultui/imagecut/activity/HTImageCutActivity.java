@@ -46,9 +46,9 @@ public class HTImageCutActivity extends HTBaseImageCutActivity {
     private void initButtons() {
         TextView reselectBtn = (TextView) findViewById(R.id.btn_reselect);
         if (HTImageFrom.FROM_CAMERA.toString().equals(mFrom)) {
-            reselectBtn.setText(R.string.pick_image_re_take_photo);
+            reselectBtn.setText(R.string.ne_pick_image_re_take_photo);
         } else {
-            reselectBtn.setText(R.string.pick_image_reselect);
+            reselectBtn.setText(R.string.ne_pick_image_reselect);
         }
         reselectBtn.setOnClickListener(new View.OnClickListener() {
             @Override

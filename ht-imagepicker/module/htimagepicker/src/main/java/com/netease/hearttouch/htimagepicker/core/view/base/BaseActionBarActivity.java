@@ -46,7 +46,7 @@ public class BaseActionBarActivity extends BaseActivity {
             if (isFromTop) {
                 mContentView.setPadding(0, 0, 0, 0);
             } else {
-                float actionBarHeight = getResources().getDimension(R.dimen.action_bar_height);
+                float actionBarHeight = getResources().getDimension(R.dimen.ne_action_bar_height);
                 if (mNavigationBarContainer.getHeight() > 0) {
                     actionBarHeight = mNavigationBarContainer.getHeight();
                 }

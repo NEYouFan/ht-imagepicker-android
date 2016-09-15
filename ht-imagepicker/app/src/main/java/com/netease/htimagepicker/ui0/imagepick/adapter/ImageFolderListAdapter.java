@@ -85,7 +85,7 @@ public class ImageFolderListAdapter extends BaseAdapter {
         albumName.setText(imageFolder.getName());
 
         TextView folderImageCount = ViewHolder.get(convertView, R.id.folder_images_count);
-        String countUnit = ContextUtil.INSTANCE.getString(R.string.pick_image_count_unit);
+        String countUnit = ContextUtil.INSTANCE.getString(R.string.ne_pick_image_count_unit);
         if (imageFolder.getImages() != null) {
             folderImageCount.setText(imageFolder.getImages().size() + countUnit);
         } else {

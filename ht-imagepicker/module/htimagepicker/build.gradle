@@ -51,12 +51,85 @@ android {
 dependencies {
     testCompile "junit:junit:${JUNIT_VERSION}"
     compile "com.android.support:appcompat-v7:${APPCOMPAT_V7_VERSION}"
-
-    //compile "com.commit451:PhotoView:${COMMIT_PHOTOVIEW_VERSION}"
-
-//    compile 'com.commonsware.cwac:camera:0.6.+'
-//    compile('com.commonsware.cwac:camera-v9:0.6.+') {
-//        exclude module: 'support-v4'
-//    }
 }
 
+def siteUrl = 'https://github.com/NEYouFan/ht-imagepicker-android'      /*
+ * Copyright by Netease (c) 2016.
+ * This source code is licensed under the MIT-style license found in the LICENSE file
+ *  in the root directory of this source tree.
+ */      // 项目的主页
+def gitUrl = 'https://github.com/NEYouFan/ht-imagepicker-android.git'   // Git仓库的url
+
+version = '1.0.0'
+group = 'com.netease.hearttouch'
+archivesBaseName='ht-imagepicker'
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom.artifactId ='ht-imagepicker'
+        pom.project {
+            packaging 'aar'
+            // Add your description here
+            name 'ht-imagepicker 是一种支持本地图片选择、拍照、图片预览的控件。'  //项目描述
+            url siteUrl
+            // Set your license
+            licenses {
+                license {
+                    name 'MIT'
+                    url 'http://www.opensource.org/licenses/mit-license.php'
+                }
+            }
+            developers {
+                developer {
+                    id 'zyl06'       //填写开发者基本信息
+                    name 'zyl06'
+                    email 'playfair@126.com'
+                }
+            }
+            scm {
+                connection gitUrl
+                developerConnection gitUrl
+                url siteUrl
+            }
+        }
+
+    }
+}
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    failOnError false
+}
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        repo = "maven"  //发布到Bintray的那个仓库里，默认账户有四个库，我们这里上传到maven库
+        name = "ht-imagepicker"  //发布到Bintray上的项目名字
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        licenses = ["MIT"]
+        publish = true
+    }
+}

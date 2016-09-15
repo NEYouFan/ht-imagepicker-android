@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/bg_transparent_grey">
+        android:background="@color/ne_bg_transparent_grey">
 
         <Button
             android:id="@+id/btn_finish"
@@ -23,10 +23,10 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="13dp"
-            android:background="@drawable/shape_round_30dp_green_normal"
+            android:background="@drawable/ne_shape_round_30dp_green_normal"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:textColor="@color/white"
+            android:textColor="@color/ne_white"
             android:textSize="16sp"
             android:visibility="gone"
             tools:text="完成 (3)" />

@@ -6,7 +6,6 @@
 
 package com.netease.hearttouch.htimagepicker.core.util.permission;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -123,11 +122,11 @@ public class PermissionsActivity extends AppCompatActivity {
     // 显示缺失权限提示
     private void showMissingPermissionDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(PermissionsActivity.this);
-        builder.setTitle(R.string.pick_image_help);
-        builder.setMessage(R.string.pick_image_help_content);
+        builder.setTitle(R.string.ne_pick_image_help);
+        builder.setMessage(R.string.ne_pick_image_help_content);
 
         // 拒绝, 退出应用
-        builder.setNegativeButton(R.string.pick_image_quit, new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.ne_pick_image_quit, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 setResult(PERMISSIONS_DENIED);
@@ -135,7 +134,7 @@ public class PermissionsActivity extends AppCompatActivity {
             }
         });
 
-        builder.setPositiveButton(R.string.pick_image_settings, new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.ne_pick_image_settings, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 startAppSettings();

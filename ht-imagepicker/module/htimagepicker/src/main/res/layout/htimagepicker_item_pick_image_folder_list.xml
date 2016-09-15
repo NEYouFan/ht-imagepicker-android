@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:background="@color/ne_white"
     android:orientation="vertical">
 
     <View
@@ -13,7 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/pick_image_folder_list_item_height"
+        android:layout_height="@dimen/ne_pick_image_folder_list_item_height"
         android:layout_gravity="fill_vertical"
         android:gravity="center_vertical"
         android:orientation="horizontal">

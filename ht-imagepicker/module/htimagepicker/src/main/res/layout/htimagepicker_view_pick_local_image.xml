@@ -16,7 +16,7 @@
             android:layout_height="1px"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="@color/pick_image_light_gray_line"/>
+            android:background="@color/ne_pick_image_light_gray_line"/>
 
         <Button
             android:id="@+id/complete_button"
@@ -25,12 +25,12 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="13dp"
-            android:background="@drawable/shape_round_30dp_green_normal"
+            android:background="@drawable/ne_shape_round_30dp_green_normal"
             android:gravity="center"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:text="完成"
-            android:textColor="@color/white"/>
+            android:textColor="@color/ne_white"/>
 
         <TextView
             android:id="@+id/preview_button"
@@ -52,13 +52,13 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/bottom_container"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="@dimen/pick_image_horizontal_margin"
-        android:layout_marginRight="@dimen/pick_image_horizontal_margin"
+        android:layout_marginLeft="@dimen/ne_pick_image_horizontal_margin"
+        android:layout_marginRight="@dimen/ne_pick_image_horizontal_margin"
         android:gravity="center"
-        android:horizontalSpacing="@dimen/pick_image_grid_internal_space"
-        android:listSelector="@drawable/selector_bg_gridview_item"
+        android:horizontalSpacing="@dimen/ne_pick_image_grid_internal_space"
+        android:listSelector="@drawable/ne_selector_bg_gridview_item"
         android:numColumns="3"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="@dimen/pick_image_grid_internal_space"/>
+        android:verticalSpacing="@dimen/ne_pick_image_grid_internal_space"/>
 
 </RelativeLayout>
