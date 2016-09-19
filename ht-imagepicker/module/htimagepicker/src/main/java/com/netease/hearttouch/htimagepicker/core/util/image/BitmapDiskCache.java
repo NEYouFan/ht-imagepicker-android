@@ -27,13 +27,14 @@ import java.security.NoSuchAlgorithmException;
  */
 public class BitmapDiskCache implements IBitmapCache {
     private static final String TAG = "HT_BitmapDiskCache";
-    private File cacheFileDir = null;
     DiskLruCache diskLruCache;
 
     public BitmapDiskCache(String cacheFileName) {
         try {
-            cacheFileDir = getDiskCacheDir(cacheFileName);
-            diskLruCache = DiskLruCache.open(cacheFileDir, ContextUtil.INSTANCE.getAppVersionCode(), 1, 10 * C.M);
+            File cacheFileDir = getDiskCacheDir(cacheFileName);
+            if (cacheFileDir != null) {
+                diskLruCache = DiskLruCache.open(cacheFileDir, ContextUtil.INSTANCE.getAppVersionCode(), 1, 10 * C.M);
+            }
         } catch (IOException e) {
             Log.e(TAG, e.toString());
             e.printStackTrace();
@@ -42,6 +43,10 @@ public class BitmapDiskCache implements IBitmapCache {
 
     @Override
     public Bitmap get(String key) {
+        if (diskLruCache == null) {
+            return null;
+        }
+
         try {
             String hashKey = hashKeyForDisk(key);
             DiskLruCache.Snapshot snapshot = diskLruCache.get(hashKey);
@@ -68,6 +73,10 @@ public class BitmapDiskCache implements IBitmapCache {
      */
     @Override
     public Bitmap put(String key, Bitmap value) {
+        if (diskLruCache == null) {
+            return null;
+        }
+
         try {
             String hashKey = hashKeyForDisk(key);
             DiskLruCache.Editor editor = diskLruCache.edit(hashKey);
@@ -91,7 +100,9 @@ public class BitmapDiskCache implements IBitmapCache {
     @Override
     public void close() {
         try {
-            diskLruCache.close();
+            if (diskLruCache != null) {
+                diskLruCache.close();
+            }
         } catch (IOException e) {
             Log.e(TAG, e.toString());
             e.printStackTrace();
@@ -100,7 +111,9 @@ public class BitmapDiskCache implements IBitmapCache {
 
     public boolean isClosed() {
         try {
-            return diskLruCache.isClosed();
+            if (diskLruCache != null) {
+                return diskLruCache.isClosed();
+            }
         } catch (Exception e) {
             Log.e(TAG, e.toString());
         }
@@ -110,7 +123,9 @@ public class BitmapDiskCache implements IBitmapCache {
     @Override
     public void clear() {
         try {
-            diskLruCache.delete();
+            if (diskLruCache != null) {
+                diskLruCache.delete();
+            }
         } catch (IOException e) {
             Log.e(TAG, e.toString());
             e.printStackTrace();
@@ -146,13 +161,24 @@ public class BitmapDiskCache implements IBitmapCache {
     }
 
     private File getDiskCacheDir(Context context, String uniqueName) {
-        String cachePath;
+        String cachePath = null;
         if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())
                 || !Environment.isExternalStorageRemovable()) {
-            cachePath = context.getExternalCacheDir().getPath();
-        } else {
-            cachePath = context.getCacheDir().getPath();
+            File cacheFile = context.getExternalCacheDir();
+            if (cacheFile != null) {
+                cachePath = cacheFile.getPath();
+            }
         }
-        return new File(cachePath + File.separator + uniqueName);
+
+        if (cachePath == null) {
+            File cacheFile = context.getCacheDir();
+            if (cacheFile != null) {
+                cachePath = cacheFile.getPath();
+            }
+        }
+
+        return cachePath != null ?
+                new File(cachePath + File.separator + uniqueName) :
+                null;
     }
 }
