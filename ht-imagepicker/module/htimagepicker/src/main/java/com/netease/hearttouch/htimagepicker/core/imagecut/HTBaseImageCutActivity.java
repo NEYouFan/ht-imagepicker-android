@@ -136,7 +136,7 @@ public abstract class HTBaseImageCutActivity
         Configuration configuration = getResources().getConfiguration();
         if (configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
             HTImageCutView cutImageView = getImageCutView();
-            cutImageView.setCutWidthHeightRatio(1.0f);
+            cutImageView.setCutWidthHeightRatio(mCutRatio);
             cutImageView.setBitmapFilePath(mSrcFile);
         }
     }

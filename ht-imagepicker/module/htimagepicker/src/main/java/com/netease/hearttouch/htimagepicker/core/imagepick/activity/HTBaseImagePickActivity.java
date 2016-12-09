@@ -294,9 +294,8 @@ public abstract class HTBaseImagePickActivity extends AppCompatActivity
     final public void startCutImage(String imageSrc, String from, @Nullable IIntentProcess intentProcess) {
         Intent intent = getIntent();
         float cutRatio = intent.getFloatExtra(Extras.EXTRA_CUT_RATIO, 1.0f);
-        String outPath = intent.getStringExtra(Extras.EXTRA_FILE_PATH);
 
-        ImageCutHelper.startForFile(this, imageSrc, cutRatio, outPath, from, REQUEST_CODE_CUT, intentProcess);
+        ImageCutHelper.startForFile(this, imageSrc, cutRatio, mFileOutPath, from, REQUEST_CODE_CUT, intentProcess);
     }
 
     protected int getSelectLimit() {

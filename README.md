@@ -39,7 +39,7 @@ ht-imagepicker 允许通过 Maven Center 下载使用。
 
 Gradle:
 
-compile 'com.netease.hearttouch:ht-imagepicker:1.0.1'
+compile 'com.netease.hearttouch:ht-imagepicker:1.0.2'
 
 
 ##ProGuard configuration
